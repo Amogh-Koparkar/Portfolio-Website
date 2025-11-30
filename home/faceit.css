@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  border: 6px solid #000;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.site-header {
+  padding: 18px 80px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Source Serif 4", serif;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.back-btn {
+  padding: 10px 28px;
+  border-radius: 999px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* MAIN LAYOUT */
+.page-content {
+  padding: 40px 80px 70px;
+}
+
+/* HERO IMAGE */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.hero-image {
+  width: 50%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+}
+
+/* BOTTOM SECTION */
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+/* LEFT TEXT */
+.project-text {
+  max-width: 520px;
+}
+
+.small-heading {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 26px;
+}
+
+.project-title {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+/* RIGHT THUMBNAILS */
+.thumbs {
+  display: flex;
+  gap: 18px;
+}
+
+/* generic thumb style */
+.thumb-card {
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* first tall card – make sure full card is visible */
+.tall-card {
+  height: 210px; /* adjust as you like (200–240px works well) */
+  width: auto;
+  object-fit: contain; /* no cropping */
+}
+
+/* other thumbs – more landscape-ish */
+.thumbs img:not(.tall-card) {
+  width: 140px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .page-content {
+    padding: 20px 24px 40px;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .thumbs {
+    margin-top: 20px;
+  }
+}

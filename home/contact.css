@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  border: 6px solid #000;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+header {
+  padding: 18px 80px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.logo {
+  font-family: "Source Serif 4", serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.logo span {
+  font-style: italic;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.nav-button {
+  padding: 10px 26px;
+  border-radius: 999px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-button:hover {
+  opacity: 0.9;
+}
+
+/* MAIN LAYOUT */
+main {
+  padding: 40px 80px 70px;
+}
+
+/* TOP CONTACT AREA */
+.hero-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* LEFT SIDE */
+.hero-left {
+  flex: 0 0 50%;
+}
+
+.contact-banner {
+  background: linear-gradient(90deg, #4e72f7, rgba(78, 114, 247, 0.7));
+  box-shadow: 4px 4px 13px 3px rgba(0, 0, 0, 0.25) inset;
+  color: #fff;
+  padding: 26px 50px;
+  border-radius: 0 40px 40px 0;
+  margin-bottom: 26px;
+  font-family: "Source Serif 4", serif;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.form-wrap {
+  background: linear-gradient(90deg, #4e72f7, #5f87ff);
+  box-shadow: 4px 4px 13px 3px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 40px;
+  padding: 28px 32px 32px;
+}
+
+.form-top-row {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.form-top-row input {
+  flex: 1;
+  border-radius: 999px;
+  border: none;
+  padding: 12px 18px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  border-radius: 28px;
+  border: none;
+  padding: 14px 18px;
+  font-size: 14px;
+  resize: none;
+  background: rgba(255, 255, 255, 0.9);
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 0;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* RIGHT SIDE */
+.hero-right {
+  flex: 1;
+  padding-top: 40px;
+  text-align: right;
+}
+
+.hero-heading {
+  font-size: 50px;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.hero-heading span {
+  color: #4e72f7;
+}
+
+.hero-text {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 380px;
+  margin-bottom: 40px;
+  margin-left: auto; /* keep it right-aligned as a block */
+}
+
+/* INFO ROW */
+.info-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 80px;
+  margin-top: -200px; /* pulled up to align visually with hero section */
+}
+
+.info-column h3 {
+  color: #000;
+  font-family: Lato, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.info-column p,
+.info-column a {
+  font-family: Lato, sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+
+.quick-links {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.quick-links li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.social-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+/* FOOTER */
+footer {
+  padding: 0 60px 20px;
+}
+
+footer hr {
+  margin: 40px 0 16px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+/* BASIC RESPONSIVE */
+@media (max-width: 1000px) {
+  main {
+    padding: 30px 24px 40px;
+  }
+
+  .hero-row {
+    flex-direction: column;
+  }
+
+  .hero-left,
+  .hero-right {
+    flex: 1 1 100%;
+  }
+
+  .info-row {
+    justify-content: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px; /* more natural spacing on small screens */
+  }
+
+  footer {
+    padding: 0 24px 18px;
+  }
+}
